@@ -76,3 +76,8 @@ In our first example JdbcTemplateMysqlDemo, we are using SQL statement to manipu
 ## Authors
 
  * **Edward P. Legaspi** - *Java Architect* - [czetsuya](https://github.com/czetsuya)
+
+ ## License
+
+This project is licensed under the GNU GPL.
+ 

@@ -1,3 +1,10 @@
+/**
+ * Copyright 2020 - present, Edward P. Legaspi | czetsuya@gmail.com.
+ * All rights reserved.
+ * 
+ * This source code is license under the license found in the 
+ * License.md file in the root directory of this source tree.
+ */
 package com.czetsuya.jdbc;
 
 import java.math.BigDecimal;
