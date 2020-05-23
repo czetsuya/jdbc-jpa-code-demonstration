@@ -22,15 +22,15 @@ import org.apache.commons.lang3.time.DateFormatUtils;
  * @author Edward P. Legaspi | czetsuya@gmail.com
  * @since 0.0.1
  */
-public class SimpleJdbcMysqlDemo {
+public class JdbcTemplateMysqlDemo {
 
     private Connection conn;
 
     public static void main(String[] args) {
-        new SimpleJdbcMysqlDemo();
+        new JdbcTemplateMysqlDemo();
     }
 
-    public SimpleJdbcMysqlDemo() {
+    public JdbcTemplateMysqlDemo() {
 
         try {
             // com.mysql.jdbc.Driver - this driver is deprecated
@@ -88,7 +88,7 @@ public class SimpleJdbcMysqlDemo {
 
     private void testInsert() {
 
-        System.out.print("\nInsert data into product");
+        System.out.println("\nInsert data into product");
         try {
             Statement st = conn.createStatement();
             String createdAt = DateFormatUtils.format(new Date(), "yyyy-MM-dd");
@@ -102,11 +102,11 @@ public class SimpleJdbcMysqlDemo {
 
     private void testUpdate() {
 
-        System.out.print("\nUpdate data in product");
+        System.out.println("\nUpdate data in product");
         try {
             Statement st = conn.createStatement();
             st.executeUpdate(
-                    "UPDATE product SET description='eet iPhone 11. All-new dual-camera system with Ultra Wide and Night mode. All-day battery. Six new colors. And the A13 Bionic, our fastest chip ever.' WHERE code='IPHONE11'");
+                    "UPDATE product SET description='Meet iPhone 11. All-new dual-camera system with Ultra Wide and Night mode. All-day battery. Six new colors. And the A13 Bionic, our fastest chip ever.' WHERE code='IPHONE11'");
 
         } catch (SQLException e) {
             System.err.println(e.getMessage());
@@ -115,7 +115,7 @@ public class SimpleJdbcMysqlDemo {
 
     private void testDelete() {
 
-        System.out.print("\nDelete IPHONE11 in product");
+        System.out.println("\nDelete IPHONE11 in product");
         try {
             Statement st = conn.createStatement();
             st.executeUpdate("DELETE FROM product WHERE code='IPHONE11'");
