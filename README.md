@@ -37,13 +37,30 @@ Once the WorkBench is running you can then connect to your database with the pas
 
 By default, the database catalog will be created. Double click on it in the Schema tab so that it is selected and then press the "Create a new SQL tab..." button and enter the script in "src/main/resources/1 - schema.sql" to create our product table.
 
+## Before Running the Tests
+
+Note that we need to change the server configuration in 2 files. One for JDBC and the other is for JPA.
+ - JDBC - JdbcTemplateMysqlDemo
+ - JPA - src/main/resources/META-INF/persistence.xml
+ 
+### What to Change?
+
+1. Change the IP address of the database server. In my case I'm running on 192.168.1.101.
+2. Change the username and password depending on the value you set when you installed your server.
+
 ## Running the Tests
 
 There are various tests that are demonstrated in this project.
 
-### SimpleJdbcMysqlDemo
+### JdbcTemplateMysqlDemo
 
 This class connects to the MySQL instance and execute CRUD operations.
+
+### JpaMysqlDemo
+
+Did you heard about hibernate? It's an ORM or Object Relational Mapping tool for Java which maps object-oriented domain to a relational database as is demonstrated here.
+
+In our first example JdbcTemplateMysqlDemo, we are using SQL statement to manipulate a record in the database. By using hibernate we will be using object instead, which makes it more easier.
 
 ## References
 
