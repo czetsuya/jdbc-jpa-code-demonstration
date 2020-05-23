@@ -29,7 +29,7 @@ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=kerri -e MYSQL_DATAB
 
 ## MySQL WorkBench Installation
 
-WorkBench installation is straight-forward for Windows you just have to download the installer from the link below and connect to your database.
+WorkBench installation is straight-forward for Windows, you just have to download the installer from the link below and connect to your database.
 
 On the other hand, there are some configurations/installations that you need to perform in Debian machines to install it. See the link in the reference section below.
 
@@ -58,14 +58,13 @@ This class connects to the MySQL instance and execute CRUD operations.
 
 ### JpaMysqlDemo
 
-Did you heard about hibernate? It's an ORM or Object Relational Mapping tool for Java which maps object-oriented domain to a relational database as is demonstrated here.
+Did you hear about hibernate? It's an ORM or Object Relational Mapping tool for Java which maps an object-oriented domain to a relational database as is demonstrated here.
 
-In our first example JdbcTemplateMysqlDemo, we are using SQL statement to manipulate a record in the database. By using hibernate we will be using object instead, which makes it more easier.
+In our first example JdbcTemplateMysqlDemo, we are using SQL statements to manipulate a record in the database. By using hibernate we will be using an object instead, which makes it easier.
 
 ## References
 
- - http://czetsuya-tech.blogspot.com
- - https://github.com/czetsuya
+ - http://czetsuya-tech.blogspot.com/2020/05/jdbc-tutorial-connecting-to-mysql-running-on-docker.html
  - https://czetsuya-tech.blogspot.com/2020/05/how-to-install-mysql-workbench-in-ubuntu.html
  - https://czetsuya-tech.blogspot.com/2019/12/learn-java-programming-for-beginners.html
  - https://czetsuya-tech.blogspot.com/2019/10/eclipse-plugins-for-java-developer.html
