@@ -12,6 +12,7 @@ There are several Java classes that demonstrate how to connect and execute SQL c
 To be able to run this project you must have the following installed on your machine:
 
  - Eclipse IDE
+ - GIT
  - MySQL WorkBench Community
  - Docker
 
@@ -65,6 +66,7 @@ In our first example JdbcTemplateMysqlDemo, we are using SQL statements to manip
 ## References
 
  - http://czetsuya-tech.blogspot.com/2020/05/jdbc-tutorial-connecting-to-mysql-running-on-docker.html
+ - GIT - https://www.youtube.com/watch?v=bMnZaIMTbC4
  - https://czetsuya-tech.blogspot.com/2020/05/how-to-install-mysql-workbench-in-ubuntu.html
  - https://czetsuya-tech.blogspot.com/2019/12/learn-java-programming-for-beginners.html
  - https://czetsuya-tech.blogspot.com/2019/10/eclipse-plugins-for-java-developer.html
